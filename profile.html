@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url('https://kalaliterasi.com/wp-content/uploads/2020/06/bendera-merah-putih-dan-peta-indonesia.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Mengatur elemen anak berada di tengah horizontal */
+            height: 100vh; /* Tambahkan ruang di sekitar konten */
+        }
+
+        .navbar {
+            text-align: center;
+            background-color: white; /* Tambahkan latar belakang semi-transparan pada navbar */
+            padding: 10px; /* Tambahkan ruang di sekitar elemen navbar */
+            margin-bottom: 20px; /* Tambahkan ruang di bawah navbar */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seriff;
+            color: red; /* Warna teks untuk tautan */
+            margin: 10px; /* Jarak antara tautan */
+        }
+
+        .profile-img {
+            width: 400px;
+            height: 400px;
+            transition: transform 0.5s, border-radius 0.5s; /* Menambahkan efek transisi pada transformasi gambar dan border-radius */
+            border-radius: 20%; /* Melengkungkan border gambar */
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1); /* Membesarkan gambar saat cursor diarahkan */
+            border-radius: 60%; /* Melengkungkan border lebih besar saat hover */
+        }
+
+        .profile-info {
+            margin-left: 50px; /* Ubah margin kiri untuk memberi ruang pada teks */
+            font-size: 21px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about">About me</a>
+        <a href="#profile">Profil</a>
+        <a href="#contact">Kontak</a>
+    </div>
+    
+    <div class="container">
+        <img src="husein.jpg" alt="Foto Profil" class="profile-img">
+        <div class="profile-info">
+            <h2>Achmad Husein Rifansyah</h2>
+            <h2>2207411016</h2>
+            <h2>TI 3A</h2>
+            <h2>Teknik Informatika</h2>
+        </div>
+    </div>
+    <footer class="copyright">
+        &copy; 2023 Achmad Husein Rifansyah
+    </footer>
+</body>
+</html>
