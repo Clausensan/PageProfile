@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Saya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <style>
         body {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: "Audiowide", sans-serif;
             background-image: url('https://kalaliterasi.com/wp-content/uploads/2020/06/bendera-merah-putih-dan-peta-indonesia.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;
@@ -65,10 +67,9 @@
             transform: scale(1.1);
         }
 
-        footer {
+        .profile-intro {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: center;
-            color: white;
-            background-color: red;
             padding: 10px;
             position: flex;
             bottom: 0;
@@ -76,6 +77,42 @@
             right: 0;
             width: 100%;
         }
+
+        footer {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            position: flex;
+            bottom: 0;
+            top:0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .contact-grid {
+        display: grid;
+         grid-template-columns: repeat(3, 1fr); /* Membagi ruang menjadi 3 kolom dengan lebar yang sama */
+         gap: 10px; /* Jarak antara setiap elemen dalam grid */
+         transition: transform 0.5s, border-radius 0.5s ease-in-out;
+         border-radius: 20%;
+        }           
+
+        .contact-grid:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-item {
+         text-align: center;
+         background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+
     </style>
 </head>
 <body>
@@ -93,6 +130,29 @@
             <h2>TI 3A</h2>
             <h2>Teknik Informatika</h2>
         </div>
+    </div>
+    <div class="profile-intro">
+        <h1>PENGENALAN DIRI</h1>
+        <p> Hallo, Nama saya Achmad Husein Rifansyah, saat ini saya adalah seorang mahasiswa di Politeknik Negeri Jakarta, jurusan Teknik Informatika. Ini merupakan semester ketiga yang sekarang saya jalani,
+           <br> dan saya telah menemukan banyak pengalaman berharga sepanjang perjalanan pendidikan saya di sini.
+        </p><br>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i> <!-- Ikon Instagram -->
+                <p>ahrfnsyah</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i> <!-- Ikon Telepon -->
+                <p>089663677500</p>
+            </div>
+            <div class="contact-item">
+                <i class="far fa-envelope"></i> <!-- Ikon Email -->
+                <p>ahmadhuseinrifansyah@gmail.com</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    
     </div>
 
     <footer class="copyright">
